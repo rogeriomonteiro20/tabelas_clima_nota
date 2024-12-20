@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas: clima e nota</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            font-size: 14px;
+            margin: 50px auto 0;
+        }
+
+        th, td {
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        .tabela-climatica {
+            width: 30%;
+            background-color: rgb(240, 248, 255);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .tabela-climatica th {
+            background-color: rgb(168, 218, 213);
+            font-weight: bold;
+        }
+
+        .tabela-climatica tr:hover {
+            background-color: rgb(200, 230, 230);
+        }
+
+        .wi {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .tabela-notas {
+            width: 50%;
+            min-width: 300px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        .tabela-notas th {
+            background-color: #fff;
+            font-weight: bold;
+        }
+
+        .tabela-notas td {
+            text-align: center;
+        }
+
+        .tabela-notas td:first-child {
+            text-align: left;
+        }
+
+        .tabela-notas tr:nth-child(odd) {
+            background-color: rgb(240, 248, 255);
+        }
+    </style>
+</head>
+<body>
+    <!-- Tabela Climática -->
+    <table class="tabela-climatica">
+        <thead>
+            <tr>
+                <th>Dia</th>
+                <th>Tempo</th>
+                <th>Mínima</th>
+                <th>Máxima</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Domingo</td>
+                <td><i class="wi wi-day-cloudy"></i></td>
+                <td>27&deg;</td>
+                <td>32&deg;</td>
+            </tr>
+            <tr>
+                <td>Segunda</td>
+                <td><i class="wi wi-day-sunny"></i></td>
+                <td>27&deg;</td>
+                <td>32&deg;</td>
+            </tr>
+            <tr>
+                <td>Terça</td>
+                <td><i class="wi wi-day-rain"></i></td>
+                <td>27&deg;</td>
+                <td>32&deg;</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>
+                <td><i class="wi wi-day-lightning"></i></td>
+                <td>27&deg;</td>
+                <td>32&deg;</td>
+            </tr>
+            <tr>
+                <td>Quinta</td>
+                <td><i class="wi wi-day-windy"></i></td>
+                <td>27&deg;</td>
+                <td>32&deg;</td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td><i class="wi wi-cloudy"></i></td>
+                <td>27&deg;</td>
+                <td>32&deg;</td>
+            </tr>
+            <tr>
+                <td>Sábado</td>
+                <td><i class="wi wi-day-cloudy"></i></td>
+                <td>27&deg;</td>
+                <td>32&deg;</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Tabela de Notas -->
+    <table class="tabela-notas">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Linguagem de Marcação</th>
+                <th>Fundamentos da Computação</th>
+                <th>Algoritmos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ada Lovelace</td>
+                <td>9.0</td>
+                <td>10.0</td>
+                <td>9.0</td>
+            </tr>
+            <tr>
+                <td>Grace Hopper</td>
+                <td>9.0</td>
+                <td>9.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>Alan Turing</td>
+                <td>9.0</td>
+                <td>9.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>Tim Berners-Lee</td>
+                <td>10.0</td>
+                <td>9.0</td>
+                <td>9.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
